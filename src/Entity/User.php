@@ -1,5 +1,7 @@
 <?php
 
+namespace Refacto\Test\Entity;
+
 class User
 {
     public $id;

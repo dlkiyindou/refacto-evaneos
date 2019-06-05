@@ -1,5 +1,7 @@
 <?php
 
+namespace Refacto\Test\Helper;
+
 trait SingletonTrait
 {
     /**

@@ -1,5 +1,12 @@
 <?php
 
+namespace Refacto\Test\Repository;
+
+use Refacto\Test\Entity\Quote;
+use Refacto\Test\Helper\SingletonTrait;
+use Faker; // cause of "DO NOT MODIFY THIS METHOD"
+use DateTime; // cause of "DO NOT MODIFY THIS METHOD"
+
 class QuoteRepository implements Repository
 {
     use SingletonTrait;
@@ -11,7 +18,7 @@ class QuoteRepository implements Repository
     /**
      * QuoteRepository constructor.
      */
-    public function __construct()
+    private function __construct()
     {
         // DO NOT MODIFY THIS METHOD
         $generator = Faker\Factory::create();

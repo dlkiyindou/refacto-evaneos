@@ -1,5 +1,11 @@
 <?php
 
+namespace Refacto\Test\Repository;
+
+use Faker\Factory;
+use Refacto\Test\Entity\Destination;
+use Refacto\Test\Helper\SingletonTrait;
+
 class DestinationRepository implements Repository
 {
     use SingletonTrait;
@@ -11,11 +17,11 @@ class DestinationRepository implements Repository
     /**
      * DestinationRepository constructor.
      */
-    public function __construct()
+    private function __construct()
     {
-        $this->country = Faker\Factory::create()->country;
+        $this->country = Factory::create()->country;
         $this->conjunction = 'en';
-        $this->computerName = Faker\Factory::create()->slug();
+        $this->computerName = Factory::create()->slug();
     }
 
     /**

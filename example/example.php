@@ -2,20 +2,22 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-require_once __DIR__ . '/../src/Entity/Destination.php';
-require_once __DIR__ . '/../src/Entity/Quote.php';
-require_once __DIR__ . '/../src/Entity/Site.php';
-require_once __DIR__ . '/../src/Entity/Template.php';
-require_once __DIR__ . '/../src/Entity/User.php';
-require_once __DIR__ . '/../src/Helper/SingletonTrait.php';
-require_once __DIR__ . '/../src/Context/ApplicationContext.php';
-require_once __DIR__ . '/../src/Repository/Repository.php';
-require_once __DIR__ . '/../src/Repository/DestinationRepository.php';
-require_once __DIR__ . '/../src/Repository/QuoteRepository.php';
-require_once __DIR__ . '/../src/Repository/SiteRepository.php';
-require_once __DIR__ . '/../src/TemplateManager.php';
+use Faker\Factory;
+use Refacto\Test\Context\ApplicationContext;
+use Refacto\Test\Entity\Quote;
+use Refacto\Test\Entity\Template;
+use Refacto\Test\Repository\DestinationRepository;
+use Refacto\Test\Repository\QuoteRepository;
+use Refacto\Test\Repository\SiteRepository;
+use Refacto\Test\TemplateManager;
 
-$faker = \Faker\Factory::create();
+$applicationContext = ApplicationContext::getInstance();
+$quoteRepository = QuoteRepository::getInstance();
+$siteRepository = SiteRepository::getInstance();
+$destinationRepository = DestinationRepository::getInstance();
+
+$templateManager = new TemplateManager($applicationContext, $quoteRepository, $siteRepository, $destinationRepository);
+$faker = Factory::create();
 
 $template = new Template(
     1,
@@ -30,7 +32,7 @@ Bien cordialement,
 L'équipe Evaneos.com
 www.evaneos.com
 ");
-$templateManager = new TemplateManager();
+
 
 $message = $templateManager->getTemplateComputed(
     $template,

@@ -1,5 +1,7 @@
 <?php
 
+namespace Refacto\Test\Entity;
+
 class Template
 {
     public $id;

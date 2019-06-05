@@ -1,5 +1,12 @@
 <?php
 
+namespace Refacto\Test\Context;
+
+use Faker\Factory;
+use Refacto\Test\Entity\Site;
+use Refacto\Test\Entity\User;
+use Refacto\Test\Helper\SingletonTrait;
+
 class ApplicationContext
 {
     use SingletonTrait;
@@ -13,9 +20,9 @@ class ApplicationContext
      */
     private $currentUser;
 
-    protected function __construct()
+    private function __construct()
     {
-        $faker = \Faker\Factory::create();
+        $faker = Factory::create();
         $this->currentSite = new Site($faker->randomNumber(), $faker->url);
         $this->currentUser = new User($faker->randomNumber(), $faker->firstName, $faker->lastName, $faker->email);
     }

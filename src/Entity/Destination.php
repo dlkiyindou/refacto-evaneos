@@ -1,5 +1,7 @@
 <?php
 
+namespace Refacto\Test\Entity;
+
 class Destination
 {
     public $id;

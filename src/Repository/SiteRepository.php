@@ -1,5 +1,11 @@
 <?php
 
+namespace Refacto\Test\Repository;
+
+use Refacto\Test\Entity\Site;
+use Refacto\Test\Helper\SingletonTrait;
+use Faker; // cause of "DO NOT MODIFY THIS METHOD"
+
 class SiteRepository implements Repository
 {
     use SingletonTrait;
