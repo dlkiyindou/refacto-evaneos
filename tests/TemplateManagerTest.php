@@ -2,12 +2,12 @@
 
 use Faker\Factory;
 use Refacto\Test\Context\ApplicationContext;
+use Refacto\Test\Entity\Quote;
+use Refacto\Test\Entity\Template;
 use Refacto\Test\Repository\DestinationRepository;
 use Refacto\Test\Repository\QuoteRepository;
 use Refacto\Test\Repository\SiteRepository;
 use Refacto\Test\TemplateManager;
-use Refacto\Test\Entity\Quote;
-use Refacto\Test\Entity\Template;
 
 class TemplateManagerTest extends PHPUnit_Framework_TestCase
 {

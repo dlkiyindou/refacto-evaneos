@@ -2,9 +2,10 @@
 
 namespace Refacto\Test\Repository;
 
+use Faker; // cause of "DO NOT MODIFY THIS METHOD"
 use Refacto\Test\Entity\Site;
 use Refacto\Test\Helper\SingletonTrait;
-use Faker; // cause of "DO NOT MODIFY THIS METHOD"
+
 
 class SiteRepository implements SiteRepositoryInterface
 {

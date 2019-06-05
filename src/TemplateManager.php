@@ -69,6 +69,8 @@ class TemplateManager
             $site = $this->siteRepository->getById($quoteParam->getSiteId());
             $destination = $this->destinationrepository->getById($quoteParam->getDestinationId());
 
+            // No need to look for these reasons before replacing them
+            // If they do not exist, they will not be replaced
             $text = str_replace('[quote:summary_html]', QuoteRenderer::toHtml($quote), $text);
             $text = str_replace('[quote:summary]', QuoteRenderer::toText($quote), $text);
 
