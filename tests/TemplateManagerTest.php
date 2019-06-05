@@ -12,20 +12,6 @@ use Refacto\Test\Entity\Template;
 class TemplateManagerTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * Init the mocks
-     */
-    public function setUp()
-    {
-    }
-
-    /**
-     * Closes the mocks
-     */
-    public function tearDown()
-    {
-    }
-
-    /**
      * @test
      */
     public function test()
