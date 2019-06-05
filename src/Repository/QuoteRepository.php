@@ -2,12 +2,15 @@
 
 namespace Refacto\Test\Repository;
 
+use DateTime;
+use Faker;
 use Refacto\Test\Entity\Quote;
 use Refacto\Test\Helper\SingletonTrait;
-use Faker; // cause of "DO NOT MODIFY THIS METHOD"
-use DateTime; // cause of "DO NOT MODIFY THIS METHOD"
 
-class QuoteRepository implements Repository
+// cause of "DO NOT MODIFY THIS METHOD"
+// cause of "DO NOT MODIFY THIS METHOD"
+
+class QuoteRepository implements QuoteRepositoryInterface
 {
     use SingletonTrait;
 

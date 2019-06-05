@@ -2,6 +2,8 @@
 
 namespace Refacto\Test\Repository;
 
+use Refacto\Test\Entity\Destination;
+
 interface DestinationRepositoryInterface
 {
     /**

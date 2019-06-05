@@ -2,35 +2,35 @@
 
 namespace Refacto\Test;
 
-use Refacto\Test\Context\ApplicationContext;
+use Refacto\Test\Context\ApplicationContextInterface;
 use Refacto\Test\Entity\Quote;
 use Refacto\Test\Entity\Template;
 use Refacto\Test\Entity\User;
-use Refacto\Test\Repository\DestinationRepository;
-use Refacto\Test\Repository\QuoteRepository;
-use Refacto\Test\Repository\SiteRepository;
 use Refacto\Test\Helper\QuoteRenderer;
+use Refacto\Test\Repository\DestinationRepositoryInterface;
+use Refacto\Test\Repository\QuoteRepositoryInterface;
+use Refacto\Test\Repository\SiteRepositoryInterface;
 
 class TemplateManager
 {
-    /** @var ApplicationContext */
+    /** @var ApplicationContextInterface */
     private $applicationContext;
 
-    /** @var QuoteRepository */
+    /** @var QuoteRepositoryInterface */
     private $quoteRepository;
 
-    /** @var SiteRepository */
+    /** @var SiteRepositoryInterface */
     private $siteRepository;
 
-    /** @var DestinationRepository */
+    /** @var DestinationRepositoryInterface */
     private $destinationrepository;
 
 
     public function __construct(
-        ApplicationContext $applicationContext,
-        QuoteRepository $quoteRepository,
-        SiteRepository $siteRepository,
-        DestinationRepository $destinationRepository
+        ApplicationContextInterface $applicationContext,
+        QuoteRepositoryInterface $quoteRepository,
+        SiteRepositoryInterface $siteRepository,
+        DestinationRepositoryInterface $destinationRepository
     )
     {
         $this->applicationContext = $applicationContext;

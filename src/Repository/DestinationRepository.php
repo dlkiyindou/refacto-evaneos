@@ -6,7 +6,7 @@ use Faker\Factory;
 use Refacto\Test\Entity\Destination;
 use Refacto\Test\Helper\SingletonTrait;
 
-class DestinationRepository implements Repository
+class DestinationRepository implements DestinationRepositoryInterface
 {
     use SingletonTrait;
 

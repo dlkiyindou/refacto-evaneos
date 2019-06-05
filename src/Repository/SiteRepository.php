@@ -6,7 +6,7 @@ use Refacto\Test\Entity\Site;
 use Refacto\Test\Helper\SingletonTrait;
 use Faker; // cause of "DO NOT MODIFY THIS METHOD"
 
-class SiteRepository implements Repository
+class SiteRepository implements SiteRepositoryInterface
 {
     use SingletonTrait;
 

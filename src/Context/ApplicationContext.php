@@ -7,7 +7,7 @@ use Refacto\Test\Entity\Site;
 use Refacto\Test\Entity\User;
 use Refacto\Test\Helper\SingletonTrait;
 
-class ApplicationContext
+class ApplicationContext implements ApplicationContextInterface
 {
     use SingletonTrait;
 
