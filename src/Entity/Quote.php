@@ -4,10 +4,10 @@ namespace Refacto\Test\Entity;
 
 class Quote
 {
-    public $id;
-    public $siteId;
-    public $destinationId;
-    public $dateQuoted;
+    private $id;
+    private $siteId;
+    private $destinationId;
+    private $dateQuoted;
 
     public function __construct($id, $siteId, $destinationId, $dateQuoted)
     {
@@ -15,5 +15,37 @@ class Quote
         $this->siteId = $siteId;
         $this->destinationId = $destinationId;
         $this->dateQuoted = $dateQuoted;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSiteId()
+    {
+        return $this->siteId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDestinationId()
+    {
+        return $this->destinationId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateQuoted()
+    {
+        return $this->dateQuoted;
     }
 }

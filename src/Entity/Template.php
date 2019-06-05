@@ -4,9 +4,9 @@ namespace Refacto\Test\Entity;
 
 class Template
 {
-    public $id;
-    public $subject;
-    public $content;
+    private $id;
+    private $subject;
+    private $content;
 
     public function __construct($id, $subject, $content)
     {
@@ -14,4 +14,30 @@ class Template
         $this->subject = $subject;
         $this->content = $content;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSubject()
+    {
+        return $this->subject;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getContent()
+    {
+        return $this->content;
+    }
+
+
 }

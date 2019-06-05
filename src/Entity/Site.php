@@ -4,12 +4,28 @@ namespace Refacto\Test\Entity;
 
 class Site
 {
-    public $id;
-    public $url;
+    private $id;
+    private $url;
 
     public function __construct($id, $url)
     {
         $this->id = $id;
         $this->url = $url;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUrl()
+    {
+        return $this->url;
     }
 }
