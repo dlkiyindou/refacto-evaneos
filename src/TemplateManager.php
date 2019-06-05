@@ -1,15 +1,15 @@
 <?php
 
-namespace Refacto\Test;
+namespace Refacto\TechnicalTest;
 
-use Refacto\Test\Context\ApplicationContextInterface;
-use Refacto\Test\Entity\Quote;
-use Refacto\Test\Entity\Template;
-use Refacto\Test\Entity\User;
-use Refacto\Test\Helper\QuoteRenderer;
-use Refacto\Test\Repository\DestinationRepositoryInterface;
-use Refacto\Test\Repository\QuoteRepositoryInterface;
-use Refacto\Test\Repository\SiteRepositoryInterface;
+use Refacto\TechnicalTest\Context\ApplicationContextInterface;
+use Refacto\TechnicalTest\Entity\Quote;
+use Refacto\TechnicalTest\Entity\Template;
+use Refacto\TechnicalTest\Entity\User;
+use Refacto\TechnicalTest\Helper\QuoteRenderer;
+use Refacto\TechnicalTest\Repository\DestinationRepositoryInterface;
+use Refacto\TechnicalTest\Repository\QuoteRepositoryInterface;
+use Refacto\TechnicalTest\Repository\SiteRepositoryInterface;
 
 class TemplateManager
 {

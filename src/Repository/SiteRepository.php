@@ -1,10 +1,10 @@
 <?php
 
-namespace Refacto\Test\Repository;
+namespace Refacto\TechnicalTest\Repository;
 
 use Faker; // cause of "DO NOT MODIFY THIS METHOD"
-use Refacto\Test\Entity\Site;
-use Refacto\Test\Helper\SingletonTrait;
+use Refacto\TechnicalTest\Entity\Site;
+use Refacto\TechnicalTest\Helper\SingletonTrait;
 
 
 class SiteRepository implements SiteRepositoryInterface

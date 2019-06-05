@@ -1,10 +1,10 @@
 <?php
 
-namespace Refacto\Test\Repository;
+namespace Refacto\TechnicalTest\Repository;
 
 use Faker\Factory;
-use Refacto\Test\Entity\Destination;
-use Refacto\Test\Helper\SingletonTrait;
+use Refacto\TechnicalTest\Entity\Destination;
+use Refacto\TechnicalTest\Helper\SingletonTrait;
 
 class DestinationRepository implements DestinationRepositoryInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Refacto\Test\Helper;
+namespace Refacto\TechnicalTest\Helper;
 
-use Refacto\Test\Entity\Quote;
+use Refacto\TechnicalTest\Entity\Quote;
 
 class QuoteRenderer
 {

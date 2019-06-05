@@ -1,6 +1,6 @@
 <?php
 
-namespace Refacto\Test\Context;
+namespace Refacto\TechnicalTest\Context;
 
 interface ApplicationContextInterface
 {

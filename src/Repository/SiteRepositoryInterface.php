@@ -1,8 +1,8 @@
 <?php
 
-namespace Refacto\Test\Repository;
+namespace Refacto\TechnicalTest\Repository;
 
-use Refacto\Test\Entity\Site;
+use Refacto\TechnicalTest\Entity\Site;
 
 interface SiteRepositoryInterface
 {

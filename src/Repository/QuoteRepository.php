@@ -1,11 +1,11 @@
 <?php
 
-namespace Refacto\Test\Repository;
+namespace Refacto\TechnicalTest\Repository;
 
 use DateTime; // cause of "DO NOT MODIFY THIS METHOD"
 use Faker; // cause of "DO NOT MODIFY THIS METHOD"
-use Refacto\Test\Entity\Quote;
-use Refacto\Test\Helper\SingletonTrait;
+use Refacto\TechnicalTest\Entity\Quote;
+use Refacto\TechnicalTest\Helper\SingletonTrait;
 
 
 class QuoteRepository implements QuoteRepositoryInterface

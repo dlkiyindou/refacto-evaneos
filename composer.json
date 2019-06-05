@@ -9,6 +9,6 @@
     },
 
     "autoload": {
-        "psr-4": {"Refacto\\Test\\": "src/"}
+        "psr-4": {"Refacto\\TechnicalTest\\": "src/"}
     }
 }

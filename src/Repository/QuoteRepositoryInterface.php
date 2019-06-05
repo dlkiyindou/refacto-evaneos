@@ -1,8 +1,8 @@
 <?php
 
-namespace Refacto\Test\Repository;
+namespace Refacto\TechnicalTest\Repository;
 
-use Refacto\Test\Entity\Quote;
+use Refacto\TechnicalTest\Entity\Quote;
 
 interface QuoteRepositoryInterface
 {

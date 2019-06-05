@@ -1,11 +1,11 @@
 <?php
 
-namespace Refacto\Test\Context;
+namespace Refacto\TechnicalTest\Context;
 
 use Faker\Factory;
-use Refacto\Test\Entity\Site;
-use Refacto\Test\Entity\User;
-use Refacto\Test\Helper\SingletonTrait;
+use Refacto\TechnicalTest\Entity\Site;
+use Refacto\TechnicalTest\Entity\User;
+use Refacto\TechnicalTest\Helper\SingletonTrait;
 
 class ApplicationContext implements ApplicationContextInterface
 {

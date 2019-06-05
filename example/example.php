@@ -3,13 +3,13 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Faker\Factory;
-use Refacto\Test\Context\ApplicationContext;
-use Refacto\Test\Entity\Quote;
-use Refacto\Test\Entity\Template;
-use Refacto\Test\Repository\DestinationRepository;
-use Refacto\Test\Repository\QuoteRepository;
-use Refacto\Test\Repository\SiteRepository;
-use Refacto\Test\TemplateManager;
+use Refacto\TechnicalTest\Context\ApplicationContext;
+use Refacto\TechnicalTest\Entity\Quote;
+use Refacto\TechnicalTest\Entity\Template;
+use Refacto\TechnicalTest\Repository\DestinationRepository;
+use Refacto\TechnicalTest\Repository\QuoteRepository;
+use Refacto\TechnicalTest\Repository\SiteRepository;
+use Refacto\TechnicalTest\TemplateManager;
 
 $applicationContext = ApplicationContext::getInstance();
 $quoteRepository = QuoteRepository::getInstance();

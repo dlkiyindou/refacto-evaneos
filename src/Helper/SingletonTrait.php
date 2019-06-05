@@ -1,6 +1,6 @@
 <?php
 
-namespace Refacto\Test\Helper;
+namespace Refacto\TechnicalTest\Helper;
 
 trait SingletonTrait
 {

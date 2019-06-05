@@ -1,6 +1,6 @@
 <?php
 
-namespace Refacto\Test\Entity;
+namespace Refacto\TechnicalTest\Entity;
 
 class Destination
 {
